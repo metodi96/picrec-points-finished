@@ -1,13 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@android:color/holo_red_dark">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5sp"
         android:text="Feedback"
+        android:layout_marginTop="20sp"
         android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_marginBottom="20sp"
+        android:layout_gravity="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="left"
+       android:layout_marginStart="20sp"
+       android:layout_marginEnd="20sp"
+       android:layout_marginTop="30sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_marginStart="20sp"
+        android:textSize="20sp"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="20sp"
+           android:layout_marginEnd="20sp"
+           android:id="@+id/insert_name"
+           android:padding="10sp"
+           android:background="@drawable/textview_bg"
+           />
+   </LinearLayout>
 
-</RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="350sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:gravity="start"
+            android:id="@+id/insert_feedback"
+            android:hint="Insert feedback here"
+            android:background="@drawable/textview_bg"
+            android:padding="10sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Feedback"
+            android:background="@drawable/textview_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="50sp"
+            android:padding="10sp"
+            android:id="@+id/submit_feedback"/>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905079323782",
+    "firebase_url": "https://picrecpoints.firebaseio.com",
+    "project_id": "picrecpoints",
+    "storage_bucket": "picrecpoints.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905079323782:android:b695c3115d1c9d6e",
+        "android_client_info": {
+          "package_name": "com.example.picrec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905079323782-ccbu9s5e9stv09hlgn0u0jopi9f88mf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxvifW4fvam34nxRQVdTI9rdbixbSzdXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905079323782-ccbu9s5e9stv09hlgn0u0jopi9f88mf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

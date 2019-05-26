@@ -13,6 +13,8 @@
         android:padding="5sp"
         android:text="Help"
         android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:layout_marginBottom="20sp"
         android:layout_gravity="center" />
     <View
         android:layout_width="match_parent"
@@ -24,12 +26,14 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="Rules"
+        android:textSize="25sp"
         android:layout_marginStart="5sp"
         android:layout_marginEnd="5sp"
         android:layout_marginBottom="5sp"
         android:padding="10sp"
         android:textStyle="bold"
-        android:layout_marginTop="20sp" />
+        android:layout_marginTop="20sp"
+        android:background="@drawable/textview_bg" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,11 +85,29 @@
         android:layout_marginStart="5sp"
         android:id="@+id/rules_description5" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20sp"
-        android:text="Go to My Profile"
-        android:id="@+id/go_to_profile"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward_green_32dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:text="Go to My Profile"
+            android:id="@+id/go_to_profile"
+            android:background="@drawable/textview_bg"
+            android:padding="10sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_green_32dp"/>
+    </LinearLayout>
+
 </LinearLayout>
