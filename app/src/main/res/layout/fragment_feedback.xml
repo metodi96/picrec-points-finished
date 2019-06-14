@@ -24,11 +24,19 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"/>
-    
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_bg"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp">
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="horizontal"
+       android:orientation="vertical"
        android:layout_gravity="left"
        android:layout_marginStart="20sp"
        android:layout_marginEnd="20sp"
@@ -37,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name: "
+        android:layout_gravity="center"
         android:layout_marginStart="20sp"
         android:textSize="20sp"/>
        <EditText
@@ -48,29 +57,155 @@
            android:padding="10sp"
            android:background="@drawable/textview_bg"
            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gender: "
+           android:layout_gravity="center"
+           android:layout_marginStart="20sp"
+           android:layout_marginTop="20sp"
+           android:textSize="20sp"/>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:id="@+id/gender_group">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Male"
+               android:id="@+id/gender_male"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female"
+               android:id="@+id/gender_female"/>
+       </RadioGroup>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Age group: "
+           android:layout_gravity="center"
+           android:layout_marginStart="20sp"
+           android:layout_marginTop="20sp"
+           android:textSize="20sp"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           android:id="@+id/agegroup_group">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="0 - 20"
+               android:id="@+id/first_agegroup"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="21 - 30"
+               android:id="@+id/second_agegroup"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="31 - 40"
+               android:id="@+id/third_agegroup"/>
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="41 - 50"
+               android:id="@+id/fourth_agegroup"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="51 - 60"
+               android:id="@+id/fifth_agegroup"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="61 or older"
+               android:id="@+id/sixth_agegroup"/>
+       </RadioGroup>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="The generated profile\n matched my choices: "
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_marginStart="20sp"
+           android:layout_marginTop="20sp"
+           android:textSize="20sp"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="left"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           android:id="@+id/generated_profile_match_choices_group">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Strongly Agree"
+               android:id="@+id/first_generated_profile_match_choices"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Agree"
+               android:id="@+id/second_generated_profile_match_choices"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Neither agree nor disagree"
+               android:id="@+id/third_generated_profile_match_choices"/>
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Disagree"
+               android:id="@+id/fourth_generated_profile_match_choices"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Strongly Disagree"
+               android:id="@+id/fifth_generated_profile_match_choices"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Not Applicable"
+               android:id="@+id/sixth_generated_profile_match_choices"/>
+       </RadioGroup>
+
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="200sp"
+           android:layout_marginStart="20sp"
+           android:layout_marginTop="20sp"
+           android:layout_marginEnd="20sp"
+           android:gravity="start"
+           android:id="@+id/insert_feedback"
+           android:hint="Insert feedback here"
+           android:background="@drawable/textview_bg"
+           android:padding="10sp"/>
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Submit Feedback"
+           android:background="@drawable/textview_bg"
+           android:layout_gravity="center"
+           android:layout_marginTop="40sp"
+           android:layout_marginBottom="50sp"
+           android:padding="10sp"
+           android:id="@+id/submit_feedback"/>
    </LinearLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="350sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="20sp"
-            android:layout_marginEnd="20sp"
-            android:gravity="start"
-            android:id="@+id/insert_feedback"
-            android:hint="Insert feedback here"
-            android:background="@drawable/textview_bg"
-            android:padding="10sp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit Feedback"
-            android:background="@drawable/textview_bg"
-            android:layout_gravity="center"
-            android:layout_marginTop="40sp"
-            android:layout_marginBottom="50sp"
-            android:padding="10sp"
-            android:id="@+id/submit_feedback"/>
 
+    </ScrollView>
 
 </LinearLayout>

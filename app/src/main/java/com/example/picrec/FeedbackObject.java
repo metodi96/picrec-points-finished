@@ -3,10 +3,182 @@ package com.example.picrec;
 class FeedbackObject {
     private String name;
     private String feedback;
+    private String gender;
+    private String ageGroup;
+    private String websitesUsed;
+    private String generatedProfileMatchChoices;
+    private String choiceImagesAppeal;
+    private String manipulatedPicturesEnjoy;
+    private String allowedLikeDislike;
+    private String happyWithGeneratedProfile;
+    private String attractiveLayout;
+    private String easyToTellWhatILikeDislike;
 
-    public FeedbackObject(String name, String feedback) {
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAgeGroup() {
+        return ageGroup;
+    }
+
+    public void setAgeGroup(String ageGroup) {
+        this.ageGroup = ageGroup;
+    }
+
+    public String getWebsitesUsed() {
+        return websitesUsed;
+    }
+
+    public void setWebsitesUsed(String websitesUsed) {
+        this.websitesUsed = websitesUsed;
+    }
+
+    public String getGeneratedProfileMatchChoices() {
+        return generatedProfileMatchChoices;
+    }
+
+    public void setGeneratedProfileMatchChoices(String generatedProfileMatchChoices) {
+        this.generatedProfileMatchChoices = generatedProfileMatchChoices;
+    }
+
+    public String getChoiceImagesAppeal() {
+        return choiceImagesAppeal;
+    }
+
+    public void setChoiceImagesAppeal(String choiceImagesAppeal) {
+        this.choiceImagesAppeal = choiceImagesAppeal;
+    }
+
+    public String getManipulatedPicturesEnjoy() {
+        return manipulatedPicturesEnjoy;
+    }
+
+    public void setManipulatedPicturesEnjoy(String manipulatedPicturesEnjoy) {
+        this.manipulatedPicturesEnjoy = manipulatedPicturesEnjoy;
+    }
+
+    public String getAllowedLikeDislike() {
+        return allowedLikeDislike;
+    }
+
+    public void setAllowedLikeDislike(String allowedLikeDislike) {
+        this.allowedLikeDislike = allowedLikeDislike;
+    }
+
+    public String getHappyWithGeneratedProfile() {
+        return happyWithGeneratedProfile;
+    }
+
+    public void setHappyWithGeneratedProfile(String happyWithGeneratedProfile) {
+        this.happyWithGeneratedProfile = happyWithGeneratedProfile;
+    }
+
+    public String getAttractiveLayout() {
+        return attractiveLayout;
+    }
+
+    public void setAttractiveLayout(String attractiveLayout) {
+        this.attractiveLayout = attractiveLayout;
+    }
+
+    public String getEasyToTellWhatILikeDislike() {
+        return easyToTellWhatILikeDislike;
+    }
+
+    public void setEasyToTellWhatILikeDislike(String easyToTellWhatILikeDislike) {
+        this.easyToTellWhatILikeDislike = easyToTellWhatILikeDislike;
+    }
+
+    public String getEasyToModifyProfile() {
+        return easyToModifyProfile;
+    }
+
+    public void setEasyToModifyProfile(String easyToModifyProfile) {
+        this.easyToModifyProfile = easyToModifyProfile;
+    }
+
+    public String getFamiliarWithSystem() {
+        return familiarWithSystem;
+    }
+
+    public void setFamiliarWithSystem(String familiarWithSystem) {
+        this.familiarWithSystem = familiarWithSystem;
+    }
+
+    public String getInControl() {
+        return inControl;
+    }
+
+    public void setInControl(String inControl) {
+        this.inControl = inControl;
+    }
+
+    public String getUnderstoodProfile() {
+        return understoodProfile;
+    }
+
+    public void setUnderstoodProfile(String understoodProfile) {
+        this.understoodProfile = understoodProfile;
+    }
+
+    public String getSatisfaction() {
+        return satisfaction;
+    }
+
+    public void setSatisfaction(String satisfaction) {
+        this.satisfaction = satisfaction;
+    }
+
+    public String getTrustworthiness() {
+        return trustworthiness;
+    }
+
+    public void setTrustworthiness(String trustworthiness) {
+        this.trustworthiness = trustworthiness;
+    }
+
+    public String getUseInTheFuture() {
+        return useInTheFuture;
+    }
+
+    public void setUseInTheFuture(String useInTheFuture) {
+        this.useInTheFuture = useInTheFuture;
+    }
+
+    private String easyToModifyProfile;
+    private String familiarWithSystem;
+    private String inControl;
+    private String understoodProfile;
+    private String satisfaction;
+    private String trustworthiness;
+    private String useInTheFuture;
+
+
+    public FeedbackObject(String name, String feedback, String gender, String ageGroup, String websitesUsed, String generatedProfileMatchChoices, String choiceImagesAppeal, String manipulatedPicturesEnjoy, String allowedLikeDislike, String happyWithGeneratedProfile, String attractiveLayout, String easyToTellWhatILikeDislike, String easyToModifyProfile, String familiarWithSystem, String inControl, String understoodProfile, String satisfaction, String trustworthiness, String useInTheFuture) {
         this.name = name;
         this.feedback = feedback;
+        this.gender = gender;
+        this.ageGroup = ageGroup;
+        this.websitesUsed = websitesUsed;
+        this.generatedProfileMatchChoices = generatedProfileMatchChoices;
+        this.choiceImagesAppeal = choiceImagesAppeal;
+        this.manipulatedPicturesEnjoy = manipulatedPicturesEnjoy;
+        this.allowedLikeDislike = allowedLikeDislike;
+        this.happyWithGeneratedProfile = happyWithGeneratedProfile;
+        this.attractiveLayout = attractiveLayout;
+        this.easyToTellWhatILikeDislike = easyToTellWhatILikeDislike;
+        this.easyToModifyProfile = easyToModifyProfile;
+        this.familiarWithSystem = familiarWithSystem;
+        this.inControl = inControl;
+        this.understoodProfile = understoodProfile;
+        this.satisfaction = satisfaction;
+        this.trustworthiness = trustworthiness;
+        this.useInTheFuture = useInTheFuture;
     }
 
     public String getName() {
