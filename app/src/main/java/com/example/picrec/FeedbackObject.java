@@ -159,7 +159,11 @@ class FeedbackObject {
     private String useInTheFuture;
 
 
-    public FeedbackObject(String name, String feedback, String gender, String ageGroup, String websitesUsed, String generatedProfileMatchChoices, String choiceImagesAppeal, String manipulatedPicturesEnjoy, String allowedLikeDislike, String happyWithGeneratedProfile, String attractiveLayout, String easyToTellWhatILikeDislike, String easyToModifyProfile, String familiarWithSystem, String inControl, String understoodProfile, String satisfaction, String trustworthiness, String useInTheFuture) {
+    public FeedbackObject(String name, String feedback, String gender, String ageGroup,
+                          String generatedProfileMatchChoices, String choiceImagesAppeal, String manipulatedPicturesEnjoy,
+                          String allowedLikeDislike, String happyWithGeneratedProfile, String attractiveLayout,
+                          String easyToModifyProfile, String familiarWithSystem, String inControl,
+                          String understoodProfile, String satisfaction, String useInTheFuture) {
         this.name = name;
         this.feedback = feedback;
         this.gender = gender;
