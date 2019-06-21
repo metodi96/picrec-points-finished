@@ -133,7 +133,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="4. The generated profile\n matched my choices.*"
+           android:text="4. The generated profile matched my choices.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -182,7 +182,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="5. The choice of images\n appealed to me.*"
+           android:text="5. The choice of images appealed to me.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -231,7 +231,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="6. I enjoyed assigning\n points to the pictures.*"
+           android:text="6. I enjoyed assigning points to the pictures.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -280,7 +280,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="7. I found it easy to tell this recommender\n system what I like and dislike.*"
+           android:text="7. I found it easy to tell this recommender system what I like and dislike.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -329,7 +329,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="8. The generated profile would\n allow me to make a better choice.*"
+           android:text="8. This recommender system would influence my selection of items.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -378,7 +378,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="9. The layout of this recommender system\n inteface is attractive.*"
+           android:text="9. The layout of this recommender system inteface is attractive.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -427,56 +427,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="10. I found it easy to modify my profile\n in this recommender system.*"
-           android:layout_gravity="center"
-           android:gravity="center"
-           android:layout_marginStart="20sp"
-           android:layout_marginTop="20sp"
-           android:textSize="20sp"/>
-       <RadioGroup
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:gravity="left"
-           android:layout_gravity="center"
-           android:orientation="vertical"
-           android:id="@+id/easy_to_modify_profile_group">
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Strongly Agree"
-               android:id="@+id/first_easy_to_modify_profile"/>
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Agree"
-               android:id="@+id/second_easy_to_modify_profile"/>
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Neither agree nor disagree"
-               android:id="@+id/third_easy_to_modify_profile"/>
-
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Disagree"
-               android:id="@+id/fourth_easy_to_modify_profile"/>
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Strongly Disagree"
-               android:id="@+id/fifth_easy_to_modify_profile"/>
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Not Applicable"
-               android:id="@+id/sixth_easy_to_modify_profile"/>
-       </RadioGroup>
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="11. I became familiar with\n this recommender system very quickly.*"
+           android:text="10. I became familiar with this recommender system very quickly.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -525,7 +476,7 @@
        <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="12. I feel in control of telling this\n recommender system what I want.*"
+       android:text="11. I feel in control of telling this recommender system what I want.*"
        android:layout_gravity="center"
        android:gravity="center"
        android:layout_marginStart="20sp"
@@ -574,7 +525,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="13. I understood why the profile\n was generated the way it was.*"
+           android:text="12. I understood why the profile was generated the way it was.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -623,7 +574,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="14. Overall, I am satisfied with the\n preference elicitation method of this system.*"
+           android:text="13. Overall, I am satisfied with this system.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"
@@ -672,7 +623,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="15. I will use this recommender again.*"
+           android:text="14. I will use this method again.*"
            android:layout_gravity="center"
            android:gravity="center"
            android:layout_marginStart="20sp"

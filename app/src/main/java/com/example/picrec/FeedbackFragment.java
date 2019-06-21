@@ -304,36 +304,6 @@ public class FeedbackFragment extends Fragment {
             }
         });
 
-        final RadioGroup easyToModifyProfileGroup = v.findViewById(R.id.easy_to_modify_profile_group);
-        easyToModifyProfileGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                easyToModifyProfile = easyToModifyProfileGroup.findViewById(checkedId);
-
-                switch (checkedId) {
-                    case R.id.first_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    case R.id.second_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    case R.id.third_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    case R.id.fourth_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    case R.id.fifth_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    case R.id.sixth_easy_to_modify_profile:
-                        easyToModifyProfileChoice = easyToModifyProfile.getText().toString();
-                        break;
-                    default: break;
-                }
-            }
-        });
-
         final RadioGroup familiarWithSystemGroup = v.findViewById(R.id.familiar_with_system_group);
         familiarWithSystemGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -526,10 +496,6 @@ public class FeedbackFragment extends Fragment {
                     Toast.makeText(getContext(), "Please select at least one of the options", Toast.LENGTH_SHORT).show();
                     attractiveLayoutGroup.getParent().requestChildFocus(attractiveLayoutGroup, attractiveLayoutGroup);
                 }
-                if (easyToModifyProfileGroup.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(getContext(), "Please select at least one of the options", Toast.LENGTH_SHORT).show();
-                    easyToModifyProfileGroup.getParent().requestChildFocus(easyToModifyProfileGroup, easyToModifyProfileGroup);
-                }
                 if (familiarWithSystemGroup.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(getContext(), "Please select at least one of the options", Toast.LENGTH_SHORT).show();
                     familiarWithSystemGroup.getParent().requestChildFocus(familiarWithSystemGroup, familiarWithSystemGroup);
@@ -551,8 +517,7 @@ public class FeedbackFragment extends Fragment {
                 else {
                     FeedbackObject feedbackObject = new FeedbackObject(name, feedback, genderChoice, ageGroupChoice,
                             generatedProfileMatchChoicesChoice, choiceImagesAppealChoice, manipulatedPicturesEnjoyChoice,
-                            allowedLikeDislikeChoice, happyWithGeneratedProfileChoice, attractiveLayoutChoice,
-                            easyToModifyProfileChoice, familiarWithSystemChoice, inControlChoice, understoodProfileChoice,
+                            allowedLikeDislikeChoice, happyWithGeneratedProfileChoice, attractiveLayoutChoice, familiarWithSystemChoice, inControlChoice, understoodProfileChoice,
                             satisfactionChoice, useInTheFutureChoice);
                     databaseReference.push().setValue(feedbackObject);
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, MainActivity.profileFragment).commit();

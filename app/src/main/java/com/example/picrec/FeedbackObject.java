@@ -12,7 +12,6 @@ class FeedbackObject {
     private String allowedLikeDislike;
     private String happyWithGeneratedProfile;
     private String attractiveLayout;
-    private String easyToTellWhatILikeDislike;
 
     public String getGender() {
         return gender;
@@ -86,22 +85,6 @@ class FeedbackObject {
         this.attractiveLayout = attractiveLayout;
     }
 
-    public String getEasyToTellWhatILikeDislike() {
-        return easyToTellWhatILikeDislike;
-    }
-
-    public void setEasyToTellWhatILikeDislike(String easyToTellWhatILikeDislike) {
-        this.easyToTellWhatILikeDislike = easyToTellWhatILikeDislike;
-    }
-
-    public String getEasyToModifyProfile() {
-        return easyToModifyProfile;
-    }
-
-    public void setEasyToModifyProfile(String easyToModifyProfile) {
-        this.easyToModifyProfile = easyToModifyProfile;
-    }
-
     public String getFamiliarWithSystem() {
         return familiarWithSystem;
     }
@@ -134,14 +117,6 @@ class FeedbackObject {
         this.satisfaction = satisfaction;
     }
 
-    public String getTrustworthiness() {
-        return trustworthiness;
-    }
-
-    public void setTrustworthiness(String trustworthiness) {
-        this.trustworthiness = trustworthiness;
-    }
-
     public String getUseInTheFuture() {
         return useInTheFuture;
     }
@@ -150,20 +125,18 @@ class FeedbackObject {
         this.useInTheFuture = useInTheFuture;
     }
 
-    private String easyToModifyProfile;
     private String familiarWithSystem;
     private String inControl;
     private String understoodProfile;
     private String satisfaction;
-    private String trustworthiness;
     private String useInTheFuture;
 
 
     public FeedbackObject(String name, String feedback, String gender, String ageGroup,
                           String generatedProfileMatchChoices, String choiceImagesAppeal, String manipulatedPicturesEnjoy,
                           String allowedLikeDislike, String happyWithGeneratedProfile, String attractiveLayout,
-                          String easyToModifyProfile, String familiarWithSystem, String inControl,
-                          String understoodProfile, String satisfaction, String useInTheFuture) {
+                          String familiarWithSystem, String inControl, String understoodProfile,
+                          String satisfaction, String useInTheFuture) {
         this.name = name;
         this.feedback = feedback;
         this.gender = gender;
@@ -175,13 +148,10 @@ class FeedbackObject {
         this.allowedLikeDislike = allowedLikeDislike;
         this.happyWithGeneratedProfile = happyWithGeneratedProfile;
         this.attractiveLayout = attractiveLayout;
-        this.easyToTellWhatILikeDislike = easyToTellWhatILikeDislike;
-        this.easyToModifyProfile = easyToModifyProfile;
         this.familiarWithSystem = familiarWithSystem;
         this.inControl = inControl;
         this.understoodProfile = understoodProfile;
         this.satisfaction = satisfaction;
-        this.trustworthiness = trustworthiness;
         this.useInTheFuture = useInTheFuture;
     }
 
