@@ -7,15 +7,6 @@
     android:gravity="center"
     android:id="@+id/fragment_inspirations_main_layout"
     android:tag="fragmentInspirations">
-    <TextView
-        android:id="@+id/headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/assign_points_to_the_pictures_you_like"
-        android:gravity="center"
-        app:fontFamily="@font/unicodearialr"
-        android:textSize="25sp"
-        android:padding="10sp"/>
 <ScrollView
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
@@ -23,7 +14,8 @@
     android:layout_weight="1"
     android:background="@drawable/layout_bg"
     android:layout_marginStart="5sp"
-    android:layout_marginEnd="5sp">
+    android:layout_marginEnd="5sp"
+    android:layout_marginTop="10sp">
 
     <GridLayout
         android:id="@+id/fragment_inspirations_layout"
@@ -60,7 +52,7 @@
             android:layout_marginBottom="15sp"
             android:text="@string/reset"
             android:padding="10sp"
-            android:background="@drawable/textview_bg"/>
+            android:background="@drawable/button"/>
         <Button
             android:id="@+id/save_preferences"
             android:layout_width="wrap_content"
@@ -69,7 +61,7 @@
             android:layout_marginBottom="15sp"
             android:text="@string/submit"
             android:padding="10sp"
-            android:background="@drawable/textview_bg"
+            android:background="@drawable/button"
             />
 
     </LinearLayout>

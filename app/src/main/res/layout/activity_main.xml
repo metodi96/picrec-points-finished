@@ -26,7 +26,6 @@
         android:background="@color/colorPrimary"
         android:id="@+id/toolbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:titleTextAppearance="@style/Toolbar.TitleText"
          />
     </android.support.design.widget.AppBarLayout>

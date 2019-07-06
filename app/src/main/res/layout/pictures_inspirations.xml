@@ -10,7 +10,7 @@
         android:id="@+id/picture_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/sun1"
+        android:src="@drawable/sun"
         android:background="@drawable/rounded_shape"
         />
     <LinearLayout
@@ -25,12 +25,11 @@
             android:id="@+id/minus_sign"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#0000"
+            android:background="@drawable/image_button_remove"
             android:layout_weight="1"
-            android:scaleX="2"
-            android:scaleY="2"
-            android:layout_marginStart="5sp"
-            android:src="@drawable/ic_remove_red_24dp" />
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginStart="5sp" />
         <TextView
             android:id="@+id/points"
             android:layout_width="wrap_content"
@@ -45,12 +44,11 @@
             android:id="@+id/plus_sign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_green_24dp"
-            android:background="#0000"
+            android:background="@drawable/image_button_add"
             android:layout_gravity="end"
             android:layout_weight="1"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             android:layout_marginEnd="5sp"
             />
     </LinearLayout>

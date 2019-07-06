@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
@@ -22,25 +23,24 @@ public class InspirationsFragment extends Fragment {
     private int pointsLimit = 10;
     private Tooltip tooltip;
     private HashMap<String, Integer> rolesToPoints = new HashMap<String, Integer>() {{
-        put("actionseek1", 0);
-        put("active1", 0);
-        put("anthro2", 0);
-        put("arch1",0);
-        put("classy1",0);
-        put("drifter2",0);
-        put("educational1",0);
-        put("escapist1",0);
-        put("escapisttwo2", 0);
-        put("explorer2", 0);
-        put("independent1", 0);
-        put("independenttwo1", 0);
-        put("organized1", 0);
-        put("seeker1", 0);
-        put("sun1", 0);
-        put("thrill2", 0);
+        put("actionseek", 0);
+        put("active", 0);
+        put("anthropologist", 0);
+        put("archaeologist",0);
+        put("classy",0);
+        put("drifter",0);
+        put("educational",0);
+        put("escapist",0);
+        put("escapisttwo", 0);
+        put("explorer", 0);
+        put("independent", 0);
+        put("independenttwo", 0);
+        put("organized", 0);
+        put("seeker", 0);
+        put("sun", 0);
+        put("thrill", 0);
     }};
     ProfileFragment profileFragment = MainActivity.profileFragment;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -185,6 +185,7 @@ public class InspirationsFragment extends Fragment {
         outState.putSerializable("rolesToPoints", rolesToPoints);
         outState.putInt("pointsLimit", pointsLimit);
     }
+
 /*
     public Set<String> shuffleSet(Set<String> set) {
         String[] array = set.toArray(new String[set.size()]);
